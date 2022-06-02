@@ -12,8 +12,8 @@ Vue.createApp({
         }
     },
     methods: {
-        removePerson(idx) {
-            this.persons.splice(idx, 1);
+        removePerson(id) {
+            this.persons = this.persons.filter((el) => el.id !== id)
         }
     }
 }).mount('#app');

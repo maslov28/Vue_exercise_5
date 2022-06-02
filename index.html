@@ -19,10 +19,10 @@
         </p>
         <ul>
             <li 
-                v-for="(item, idx) in persons" 
+                v-for="item in persons" 
                 :key="item.id"
             >   
-                <button @click="removePerson(idx)">Удалить</button> 
+                <button @click="removePerson(item.id)">Удалить</button> 
                 <span>{{item.name}} </span>
                 <span>{{item.id}}</span>
             </li>
